@@ -1,11 +1,8 @@
-//na pasta de controller é onde criamos a interface entre app e as rotas
 
-//controller vai ter que lidar com as requisições, logo ele precisa saber sobre o model de livros
 
 import livro from "../models/Livros.js";
 
 class LivroController{
-  //criar os metodos de livros aqui
  
   static async listarLivros(req,res){
        const listarLivros = await livro.find({});
@@ -27,7 +24,6 @@ class LivroController{
 
       
 
-      // é sempre bom usar try catch para lidar com erros e sucessos e fica aqui pq erros de rotas devem ser tratadas fora de rotas
   }
   
   static async encontrarUmLivro(req,res){
@@ -67,6 +63,6 @@ class LivroController{
 
 }
 
-//para não precsar ter que instanciar minhas classe com operador new sempre que for trabalhar com elas eu posso usar o static
+
 
 export default LivroController;
