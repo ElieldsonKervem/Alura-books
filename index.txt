@@ -1,0 +1,23 @@
+//Api é um acronome para ver uma interface que é um ponto de contato de backend falando com um fronte ende, comça no front e retorna até chegar no front-end
+
+//tudo que é muito comum nos utilizamos um conjunto de biblioteca para servidores e vamos utilizar express
+
+//nos determinando como adicionar e buscar e alterar dados com nodejs
+
+//Persistencia de dados é tudo sobre as informaçõeos em um arquvio, temos varios formatos de dados
+
+//sql está ligado a relação entre tabelas, fazer referencia e não repete informações
+
+//mongodb+srv://<db_username>:Z0tEicpes0JdPpQ1@nodedb.69ouyzg.mongodb.net/?appName=NodeDB
+
+//mongodb+srv://elieldsonsouza_db_user:<db_password>@nodedb.69ouyzg.mongodb.net/?appName=NodeDB
+
+//O padrão de ouro hoje em dia é o URI, unifor resouce identifier, linha de texto unico concentra tudo que o banco de dados vai precisar.
+
+postfresql://user:senha e tec 
+
+//para fazer conexões entre o atlas mongodb usamos o mongoose
+
+//mongoese te passou um uri que tem +src, precisa parassa o nome do dob, a senha e /aquivaionomedobancodedados?  e vai o nome do db que vc quer manipular o mongose é uma ferramenta para lidar com a parte pesada de conexão com banco de dados, lembra que em docker local precisa subir,name:port,senha,ip e etc... mongoese já faz isso, primeiro pricsa ciar um arquivo de conexão joque tudo em um arquivodentro de config exporte como uma funcao mongooseconection.connect(config mongose.atlas)  retorne o mongose.conection() utilize assincronismo aqui, lembre-se é uma conexão com um banco de dados, logo precisa ser de forma assincrona.  com relação a exportação utilize ele no app, lembrar que a conexão é orientada e eventos, on e once lidar primeiro com os erros, erlier return 
+
+//para não ter problema com senhas sempre utilizar o dotenv para variaveis de ambiente
