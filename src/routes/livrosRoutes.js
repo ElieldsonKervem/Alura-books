@@ -2,7 +2,6 @@ import expess from 'express';
 import LivroController from '../controller/livroController.js';
 
 
-
 const routes = expess.Router();
 
 routes.get('/livros',LivroController.listarLivros)
