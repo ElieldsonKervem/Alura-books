@@ -8,5 +8,5 @@ async function databaseConnection(){
   return mongoose.connection;
 }
 
-export default databaseConnection
+export default databaseConnection;
 
