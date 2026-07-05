@@ -16,7 +16,6 @@ export default [
       "no-unused-vars": "warn",
       "no-console": "off",
       "semi": ["error", "always"],
-      "quotes": ["error", "double"]
     }
   }
 ];

@@ -1,7 +1,5 @@
 import autores from "../models/Autor.js";
 
-
-
 class AutorController{
     static async criarAutor(req,res){
         
@@ -29,9 +27,16 @@ class AutorController{
     static async encontrarAutor(req,res){
         try{
             const {id} = req.params;
+        
             const trazerAutor = await autores.findById(id);
+
+            if(trazerAutor !== null){
             res.status(200).json({message:"Esse são todo os autores cadastrados", trazerAutor});
-    
+            }
+            else{
+               res.status(400).json({message:"Esse autor não foi encontrado"});
+            }            
+            
         }catch(error){
             console.erro("Autor com esse ID não foi encontrado ou Error no servidor " + error);
         }
@@ -61,6 +66,6 @@ class AutorController{
        }
     }
 
-}
+};
 
 export default AutorController;

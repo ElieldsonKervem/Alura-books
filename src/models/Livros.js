@@ -1,8 +1,4 @@
-
-
 import mongoose from "mongoose";
-
-
 
 const livrariaSchema = new mongoose.Schema({
     
