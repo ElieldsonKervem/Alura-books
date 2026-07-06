@@ -28,7 +28,10 @@
     }
     
     static async encontrarUmLivro(req,res,next){
+      
+      
         try{
+         
           const {id} = req.params;
           
             const pagandoLivro = await livro.findById(id);
