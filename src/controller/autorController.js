@@ -1,4 +1,4 @@
-import autores from "../models/Autor.js";
+import {autores} from "../models/index.js";
 
 class AutorController{
     static async criarAutor(req,res){
@@ -16,6 +16,7 @@ class AutorController{
 
     static async trazerAutores(req,res){
         try{
+            console.log(autores)
             const trazerTodosOsAutores = await autores.find({});
             res.status(200).send({message:"Esse são todo os autores cadastrados", trazerTodosOsAutores});
         }catch(error){
